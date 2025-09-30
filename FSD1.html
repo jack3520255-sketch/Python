@@ -1,0 +1,66 @@
+<html>
+    <head>  
+    <title>
+        FSD
+    </title>
+</head>
+<body>
+    <form method="get" action="abc" align="left">
+        <fieldset>
+            <legend align="left">Sign-up</legend>
+            <label>User Name: <input type="text" placeholder="Enter Username" name="Uname" autofocus required autocomplete="on"/> </label>
+
+            <input type="image" src="1.png" alt="photo" width="50" height="50"><br><br>
+
+            <label>Password: <input type="password" maxlength="5"/> </label> <br><br>
+
+            <label>Contact Number: <input type="tel" name="tel"/> </label> <br><br>
+
+            <label>Email: <input type="email"  readonly placeholder="This is readonly Field" /> </label> <br><br>
+
+            <label>Gender: <input type="radio" checked name="gender" value="male"/>Male <input type="radio" name="gender" value="female"/>Female </label> <br/><br/>
+          
+            <label> Area of Interest: <input type="checkbox" name="DBMS"> DBMS 
+            <input type="checkbox" name="DS"> DS 
+            <input type="checkbox" name="FSD"> FSD
+            <input type="checkbox" name="None of the Above"> None of the Above </label> <br><br>
+
+            <label> age:<input type="range" id="age" name="age" min="15" max="70" step="2" value="" oninput="num.value=this.value"></label> 
+            <label>Your age: <input type="text" id="num"> </label> <br><br>
+
+            <label>Number: <input type="number" name="num" min="10" max="30"/> </label><br><br>
+
+            <label>DOB: <input type="date" name="dob" min=""/> </label> <br><br>
+
+            <label>Department: </label>
+            <select name="Department">
+                <option value="" selected disabled hidden> Select Department</option> 
+                <optgroup label="CE">
+                    <option>CSE</option>
+                    <option>CST</option>
+                </optgroup>
+                <optgroup label="Mech">
+                    <option>CAD</option>
+                    <option>CAM</option>
+                </optgroup>
+                </select> <br><br>
+                <label >Address</label>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="6" cols="20"></textarea><br><br >
+                <label >upload file <input type="file" name="f1" accept="pdf.doc" multiple></label>
+                <input type="color" nav="fav" id="favcolor" value="Balck"/>
+                <input type="hidden" name="id" value="1234"><br><br>
+                <label >Perfered Browser :</label>
+                <input list="Browsers" name="Browser" id="Browser">
+                <datalist id="Browsers">
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                </datalist>
+                <input type="submit" value="Click Me">
+                <input type="reset" value="Reset">
+                <br><br>
+                <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

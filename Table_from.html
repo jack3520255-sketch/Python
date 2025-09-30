@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table_From</title>
+</head>
+<body>
+     <table border="2" cellspacing="4" cellpadding="30" align="Center" >
+        <form method="get" action="abc" align="left">
+             <tr > 
+            <th colspan="2" bgcolor="">Pizza Shop</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td>Topping</td>
+            <td>
+                <label> <input type="radio" checked name="Topping" value="Supreme"/>Supreme </label> <br>
+                  <label>  <input type="radio" checked name="Topping" value="Vegetaraian"/>Vegetaraian </label> <br/><br/>
+          
+            </td>
+        </tr>
+        <tr>
+            <td>Extras
+            </td>
+            <td>
+                <label> 
+                
+            <input type="checkbox" name="Chees"> Chees
+            <input type="checkbox" name="others"> others
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Extras</td>
+            <td>
+                 <select name="Department">
+                <option value="" selected disabled hidden> Small</option> 
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>large</option>
+                </optgroup>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">Comment: <br>
+            
+                <textarea id="Comment" name="Comment" rows="6" cols="20"></textarea>
+                
+            </td>
+        </tr>
+       <tr>
+        <fieldset>
+             <th colspan="2" align="left"> <input type="submit" value="Orders">
+            <input type="reset" value="Reset"></th>
+        </fieldset>
+       
+       </tr>
+
+        </form>
+       
+     </table>
+</body>
+</html>
